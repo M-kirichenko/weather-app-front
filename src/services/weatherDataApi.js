@@ -16,12 +16,6 @@ class Api {
     const res = await axios.get(`${this.apibase}?city=${city}`, {
       headers: {
         Authorization: localStorage.getItem("idToken"),
-        "Access-Control-Allow-Headers":
-          "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
-        "Access-Control-Allow-Methods": "OPTIONS,GET",
-        "Access-Control-Allow-Credentials": "true",
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json",
       },
     });
     return this.msg(res);
