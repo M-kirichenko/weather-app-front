@@ -16,7 +16,7 @@ class Api {
     const res = await axios.get(`${this.apibase}?city=${city}`, {
       headers: {
         Authorization: localStorage.getItem(
-          "CognitoIdentityServiceProvider.36dgrj8teuk656bjcvpmm653ja.9676d6b1-f36d-42e0-8f36-d8dd27486b0f.idToken"
+          "CognitoIdentityServiceProvider.7kfuq1j4ueig1k689p8uce6juq.85f34bcd-4e2d-4a1a-ac03-2a9bb0e631ef.idToken"
         ),
       },
     });
