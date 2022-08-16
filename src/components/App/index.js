@@ -6,7 +6,7 @@ import api from "../../services/weatherDataApi";
 import "./app.css";
 
 const App = (props) => {
-  const { jwtToken } = props.user.signInUserSession.accessToken;
+  const { jwtToken } = props.user.signInUserSession.idToken;
   localStorage.setItem("idToken", jwtToken);
   const [cityWeather, setCityWeather] = useState({});
   const [error, setError] = useState("");
