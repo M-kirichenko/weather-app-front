@@ -1,0 +1,18 @@
+#weatherInfoOuter {
+  margin-top: 50px;
+}
+
+#weatherInfoOuter h1 {
+  margin-bottom: 50px;
+}
+
+#weatherInfoWrapper {
+  border: 1px solid black;
+  width: 100%;
+  min-height: 250px;
+  padding: 10px;
+}
+
+.weather-info-item {
+  margin-bottom: 25px;
+}

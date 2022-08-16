@@ -1,0 +1,26 @@
+#cityInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+#cityInput > input {
+  flex-basis: 70%;
+}
+
+#cityInput > button {
+  flex-basis: 20%;
+  cursor: pointer;
+}
+
+#cityInput > input,
+#cityInput > button {
+  padding: 10px;
+  margin: 10px;
+}
+
+#cityInput button {
+  background-color: orange;
+  outline: none;
+  border: 1px solid black;
+  color: white;
+}
