@@ -5,7 +5,9 @@ import WeatherInfo from "../WeatherInfo";
 import api from "../../services/weatherDataApi";
 import "./app.css";
 
-const App = () => {
+const App = (props) => {
+  const { jwtToken } = props.user.signInUserSession.accessToken;
+  localStorage.setItem("idToken", jwtToken);
   const [cityWeather, setCityWeather] = useState({});
   const [error, setError] = useState("");
   const cityWeatherHandler = async (city) => {
