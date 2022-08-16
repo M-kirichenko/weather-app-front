@@ -17,7 +17,7 @@ const App = (props) => {
       setError("");
     } catch (err) {
       const { message } = err.response.data;
-      message ? setError(message) : setError(err.response.data);
+      setError(message);
     }
   };
 
