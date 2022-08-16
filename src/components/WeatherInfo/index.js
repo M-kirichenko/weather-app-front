@@ -10,7 +10,7 @@ const WeatherInfo = ({ cityWeather }) => {
       <div id="weatherInfoWrapper">
         <div className="weather-info-item">
           <p>
-            <b>Temperature</b>: {temp} C
+            <b>Temperature</b>: {temp} °C
           </p>
           <p>
             <b>Weather Conditions:</b> {weatherType}
